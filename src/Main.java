@@ -28,6 +28,8 @@ public class Main {
         }
         else
             System.out.println("team2 Win the game");
+
+        System.out.println("Winning team get reward wroth Rs.5000");
     }
 
 
