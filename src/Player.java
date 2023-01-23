@@ -32,4 +32,6 @@ public class Player {
     public void setTeamName(String teamName) {
         this.teamName = teamName;
     }
+
+    System.out.println("player.java");
 }
