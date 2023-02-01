@@ -1,13 +1,14 @@
 public class GetWinner {
-    public static void whoIsWinner(int team1Score, int team2Score)
+    public static void whoIsWinner(Team firstTeam, Team secondTeam)
     {
-        if(team1Score > team2Score)
+        if(firstTeam.getRunScored() > secondTeam.getRunScored())
         {
-            System.out.println("team1 Win the game");
+            System.out.println(firstTeam.getTeamName() + " Win the game ");
         }
-        else if(team1Score == team2Score)
+        else if(firstTeam.getRunScored() == secondTeam.getRunScored())
             System.out.println("Match Draw");
         else
-            System.out.println("team2 Win the game");
+            System.out.println(secondTeam.getTeamName() + " Win the game");
     }
+
 }
