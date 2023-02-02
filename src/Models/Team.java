@@ -1,6 +1,6 @@
-
+package Models;
+import Others.*;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Team {
      InputValues inputValues = new InputValues();
@@ -38,25 +38,25 @@ public class Team {
         return WicketsFallen;
     }
 
-    void setTeamPlayer(ArrayList<Player> team)
+    public void setTeamPlayer(ArrayList<Player> team)
     {
         this.team = team;
     }
-    void updateRunScored(int score)
+    public void updateRunScored(int score)
     {
         runScored += score;
     }
-    void updateBallFaced()
+    public void updateBallFaced()
     {
         ballFaced++;
     }
-    void upadateWicketFallen()
+    public void upadateWicketFallen()
     {
         WicketsFallen++;
     }
 //    public void getTeamPlayerName()
 //    {
-//        for(Player player : team)
+//        for(Models.Player player : team)
 //        {
 //            System.out.println(player.getPlayerName() + " " + player.getTeamName());
 //        }

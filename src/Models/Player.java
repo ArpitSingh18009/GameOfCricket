@@ -1,3 +1,4 @@
+package Models;
 
 public class Player {
     private String playerName ;
@@ -69,19 +70,19 @@ public class Player {
     public void updatePlayerTotals6s() {
         this.playerTotals6s +=1;
     }
-    void addPlayerName(String name)
+    public void addPlayerName(String name)
     {
         this.playerName = name;
     }
-    void addRunScored(int score)
+    public void addRunScored(int score)
     {
         this.score += score;
     }
-    void addballFaced ()
+    public void addballFaced ()
     {
         ballFaced++;
     }
-    void updateStrikeRate()
+    public void updateStrikeRate()
     {
         strikeRate = (1.00*score)/ballFaced ;
     }

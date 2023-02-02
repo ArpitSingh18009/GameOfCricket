@@ -1,3 +1,5 @@
+package Others;
+
 public class GenratePlayerAge {
     public static int generatePlayerAge()
     {

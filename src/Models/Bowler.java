@@ -1,3 +1,5 @@
+package Models;
+
 public class Bowler extends Player{
     protected int ballBowled ;
     protected int wicketTaken ;

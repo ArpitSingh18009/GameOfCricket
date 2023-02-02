@@ -1,3 +1,7 @@
+package Views;
+
+import Models.Team;
+
 public class GetWinner {
     public static void whoIsWinner(Team firstTeam, Team secondTeam)
     {

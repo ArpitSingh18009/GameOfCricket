@@ -1,5 +1,7 @@
+package Views;
 
-
+import Controllers.*;
+import Models.*;
 import java.util.ArrayList;
 import java.util.Formatter;
 
@@ -8,10 +10,10 @@ public class ScoreBoard {
     {
         ArrayList<Player> playerList = A.getTeamPlayer();
 
-        System.out.println("Team " + A.getTeamName()+"Score");
+        System.out.println("Models.Team " + A.getTeamName()+"Score");
         System.out.println("/-----------------------------------------------------------------------------------------/");
 
-        System.out.format("%15s %15s %15s %15s %15s\n", "Player Name", "Score", "BallFaced", "4s", "6s");
+        System.out.format("%15s %15s %15s %15s %15s\n", "Models.Player Name", "Score", "BallFaced", "4s", "6s");
 
         System.out.println("/-----------------------------------------------------------------------------------------/");
         for(Player player : playerList)
@@ -21,9 +23,9 @@ public class ScoreBoard {
         System.out.println("/-----------------------------------------------------------------------------------------/");
         System.out.println();
 
-        System.out.println("Team " + B.getTeamName()+"Score");
+        System.out.println("Models.Team " + B.getTeamName()+"Score");
         System.out.println("/-----------------------------------------------------------------------------------------/");
-        System.out.format("%15s %15s %15s %15s %15s\n", "Player Name", "Score", "BallFaced", "4s", "6s");
+        System.out.format("%15s %15s %15s %15s %15s\n", "Models.Player Name", "Score", "BallFaced", "4s", "6s");
 
         System.out.println("/-----------------------------------------------------------------------------------------/");
         playerList = B.getTeamPlayer();

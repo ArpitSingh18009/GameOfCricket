@@ -1,6 +1,10 @@
+package Others;
+
+import Models.Player;
+
 import java.util.ArrayList;
 import java.util.Scanner;
-
+import Models.*;
 public class InputValues {
      private int curr=0;
      private static int teamSize ;
@@ -8,7 +12,7 @@ public class InputValues {
      public String takeInputTeamName()
      {
 
-         System.out.println("Enter Team name : ");
+         System.out.println("Enter Models.Team name : ");
          String name = scanner.nextLine();
          return name;
      }
@@ -20,7 +24,7 @@ public class InputValues {
      }
      public int takeInputOfNoOfPlayerInATeam()
      {
-         System.out.println("Enter Number of Player in a Team :");
+         System.out.println("Enter Number of Models.Player in a Models.Team :");
          int teamSi = scanner.nextInt();
          this.teamSize = teamSi;
          return teamSize;
@@ -29,7 +33,7 @@ public class InputValues {
      {
          ArrayList<Player> teamPlayer = new ArrayList<>();
          while(curr < teamSize ) {
-             System.out.println("Enter Player name : ");
+             System.out.println("Enter Models.Player name : ");
              String playerName = scanner.nextLine();
              //System.out.println(playerName);
              int playerType = 123;
@@ -47,9 +51,9 @@ public class InputValues {
         Scanner scanner = new Scanner(System.in);
         while(playerType !=1 && playerType !=2)
         {
-            System.out.println("Enter Player type : "); // TODO : exception handling;
-            System.out.println("For Batsman : Press 1 ");
-            System.out.println("For Bowler : Press 2");
+            System.out.println("Enter Models.Player type : "); // TODO : exception handling;
+            System.out.println("For Models.Batsman : Press 1 ");
+            System.out.println("For Models.Bowler : Press 2");
             playerType = Integer.parseInt(scanner.nextLine());
         }
         return playerType;
